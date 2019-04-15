@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            tools:context=".Especies">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            tools:context=".DecimaPrimeiraPagina">
+
+        <ImageView
+                android:layout_width="236dp"
+                android:layout_height="140dp" app:srcCompat="@drawable/placa"
+                android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="10dp" app:layout_constraintBottom_toTopOf="@+id/cardDetonador"/>
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="147dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="36dp"
+                android:text="@string/personagens"
+                android:textColor="@color/colorAccent3"
+                android:textSize="40sp"
+                app:layout_constraintTop_toTopOf="parent" app:fontFamily="@font/anton"
+                android:layout_marginEnd="132dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="132dp"/>
+
+        <ImageView
+                android:id="@+id/cardDetonador"
+                android:layout_width="345dp"
+                android:layout_height="254dp"
+                android:contentDescription="@string/descricao_card"
+                android:onClick="ClickDetonador"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/botao_fundo" tools:layout_editor_absoluteY="130dp"
+                tools:ignore="MissingConstraints"/>
+
+        <ImageView
+                android:id="@+id/cardNebulosa"
+                android:layout_width="345dp"
+                android:layout_height="254dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/descricao_card"
+                android:onClick="ClickNebulosa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardMago"
+                app:srcCompat="@drawable/botao_fundo" />
+
+        <ImageView
+                android:id="@+id/cardSniper"
+                android:layout_width="345dp"
+                android:layout_height="254dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/descricao_card"
+                android:onClick="ClickSniper"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardNebulosa"
+                app:srcCompat="@drawable/botao_fundo" />
+
+        <ImageView
+                android:id="@+id/cardMago"
+                android:layout_width="345dp"
+                android:layout_height="254dp"
+                android:layout_marginTop="44dp"
+                android:contentDescription="@string/descricao_card"
+                android:onClick="ClickMago"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardDetonador"
+                app:srcCompat="@drawable/botao_fundo" />
+
+        <ImageView
+                android:id="@+id/cardValente"
+                android:layout_width="350dp"
+                android:layout_height="254dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/descricao_card"
+                android:onClick="ClickValente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardSniper"
+                app:srcCompat="@drawable/botao_fundo" />
+
+        <TextView
+                android:id="@+id/heroi1"
+                android:layout_width="213dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/heroi1"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/cardDetonador"
+                app:layout_constraintHorizontal_bias="0.765"
+                app:layout_constraintStart_toStartOf="@+id/cardDetonador"
+                app:layout_constraintTop_toTopOf="@+id/cardDetonador" app:fontFamily="@font/anton"
+                android:textColor="@color/colorPrimary"/>
+
+        <TextView
+                android:id="@+id/heroi2"
+                android:layout_width="121dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/heroi2"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardMago"
+                app:layout_constraintEnd_toEndOf="@+id/cardMago"
+                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintStart_toStartOf="@+id/cardMago"
+                app:layout_constraintTop_toTopOf="@+id/cardMago"
+                app:layout_constraintVertical_bias="0.183" android:textColor="@color/colorPrimary"
+                app:fontFamily="@font/anton"/>
+
+        <TextView
+                android:id="@+id/heroi3"
+                android:layout_width="163dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/heroi3"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardNebulosa"
+                app:layout_constraintEnd_toEndOf="@+id/cardNebulosa"
+                app:layout_constraintStart_toStartOf="@+id/cardNebulosa"
+                app:layout_constraintTop_toTopOf="@+id/cardNebulosa"
+                app:layout_constraintVertical_bias="0.26" app:fontFamily="@font/anton"
+                android:textColor="@color/colorPrimary" app:layout_constraintHorizontal_bias="0.549"/>
+
+        <TextView
+                android:id="@+id/heroi4"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="44dp"
+                android:text="@string/heroi4"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/cardSniper"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="@+id/cardSniper"
+                app:layout_constraintTop_toTopOf="@+id/cardSniper"
+                android:textColor="@color/colorPrimary"
+                app:fontFamily="@font/anton"/>
+
+        <TextView
+                android:id="@+id/heroi5"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/heroi5"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardValente"
+                app:layout_constraintEnd_toEndOf="@+id/cardValente"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="@+id/cardValente"
+                app:layout_constraintTop_toTopOf="@+id/cardValente"
+                app:layout_constraintVertical_bias="0.146" android:textColor="@color/colorPrimary"
+                app:fontFamily="@font/anton"/>
+
+        <TextView
+                android:id="@+id/textView25"
+                android:layout_width="92dp"
+                android:layout_height="20dp"
+                android:text="@string/descricao_heroi1"
+                app:fontFamily="@font/cabin" android:textStyle="bold" android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/heroi1" app:layout_constraintStart_toEndOf="@+id/imageView9"
+                android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView" app:layout_constraintEnd_toStartOf="@+id/heroi1"
+                android:layout_marginEnd="10dp" android:layout_marginRight="10dp"
+                app:layout_constraintHorizontal_bias="0.005"/>
+
+        <TextView
+                android:id="@+id/textView26"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/descricao1_heroi5"
+                app:layout_constraintBottom_toBottomOf="@+id/cardValente"
+                app:layout_constraintEnd_toEndOf="@+id/cardValente"
+                app:layout_constraintHorizontal_bias="0.939"
+                app:layout_constraintStart_toStartOf="@+id/cardValente"
+                app:layout_constraintTop_toBottomOf="@+id/heroi5"
+                app:layout_constraintVertical_bias="0.0" android:textColor="@color/colorPrimary"
+                app:fontFamily="@font/cabin"/>
+
+        <TextView
+                android:id="@+id/textView27"
+                android:layout_width="34dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/descricao1_heroi4"
+                app:layout_constraintBottom_toBottomOf="@+id/cardSniper"
+                app:layout_constraintEnd_toEndOf="@+id/cardSniper"
+                app:layout_constraintHorizontal_bias="0.559"
+                app:layout_constraintStart_toStartOf="@+id/cardSniper"
+                app:layout_constraintTop_toBottomOf="@+id/heroi4"
+                app:layout_constraintVertical_bias="0.0" android:textColor="@color/colorPrimary"
+                app:fontFamily="@font/cabin" android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/textView28"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/descricao1_heroi3"
+                app:layout_constraintBottom_toBottomOf="@+id/cardNebulosa"
+                app:layout_constraintEnd_toEndOf="@+id/cardNebulosa"
+                app:layout_constraintTop_toBottomOf="@+id/heroi3"
+                app:layout_constraintVertical_bias="0.0"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textStyle="bold"
+                android:layout_marginEnd="140dp" android:layout_marginRight="140dp"/>
+
+        <TextView
+                android:id="@+id/textView29"
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/descricao1_heroi2"
+                app:layout_constraintBottom_toBottomOf="@+id/cardMago"
+                app:layout_constraintEnd_toEndOf="@+id/cardMago"
+                app:layout_constraintHorizontal_bias="0.588"
+                app:layout_constraintStart_toStartOf="@+id/cardMago"
+                app:layout_constraintTop_toBottomOf="@+id/heroi2"
+                app:layout_constraintVertical_bias="0.039" android:textColor="@color/colorPrimary"
+                app:fontFamily="@font/cabin" android:textStyle="bold"/>
+
+        <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="114dp"
+                android:layout_height="149dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/cardMago"
+                app:layout_constraintStart_toStartOf="@+id/cardMago"
+                app:layout_constraintTop_toTopOf="@+id/cardMago"
+                app:layout_constraintVertical_bias="0.771"
+                app:srcCompat="@drawable/suculenta" android:layout_marginLeft="60dp" android:layout_marginStart="60dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.097"/>
+
+        <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="133dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/cardNebulosa"
+                app:layout_constraintEnd_toEndOf="@+id/cardNebulosa"
+                app:layout_constraintHorizontal_bias="0.231"
+                app:layout_constraintStart_toStartOf="@+id/cardNebulosa"
+                app:layout_constraintTop_toTopOf="@+id/cardNebulosa"
+                app:layout_constraintVertical_bias="0.558"
+                app:srcCompat="@drawable/samambaia"/>
+
+        <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="134dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="24dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/cardSniper"
+                app:layout_constraintStart_toStartOf="@+id/cardSniper"
+                app:layout_constraintTop_toTopOf="@+id/cardSniper"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/lanca_de_sao_jorge" android:layout_marginLeft="56dp"/>
+
+        <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="127dp"
+                android:layout_height="148dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/cardValente"
+                app:layout_constraintStart_toStartOf="@+id/cardValente"
+                app:layout_constraintTop_toTopOf="@+id/cardValente"
+                app:srcCompat="@drawable/suculenta" />
+
+        <ImageView
+                android:layout_width="103dp"
+                android:layout_height="139dp"
+                android:id="@+id/imageView9" android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/heroi1" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="96dp" android:layout_marginStart="96dp" android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardDetonador"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/carnivora"/>
+        <TextView
+                android:text="@string/descricao2_heroi1"
+                android:layout_width="95dp"
+                android:layout_height="53dp"
+                android:id="@+id/textView" android:textSize="10sp"
+                app:fontFamily="@font/cabin" android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/textView25"
+                app:layout_constraintStart_toEndOf="@+id/imageView9" android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp" app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toStartOf="@+id/cardDetonador" android:layout_marginEnd="82dp"
+                android:layout_marginRight="82dp" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="@string/descricao3_heroi1"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp" tools:layout_editor_absoluteY="267dp"
+                tools:layout_editor_absoluteX="201dp" android:id="@+id/textView2" app:fontFamily="@font/cabin"
+                android:textStyle="bold" android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"/>
+        <TextView
+                android:text="@string/descricao4_heroi1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/textView4" app:fontFamily="@font/cabin"
+                android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintStart_toEndOf="@+id/textView8"
+                android:layout_marginLeft="1dp" android:layout_marginStart="1dp" android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView21"
+                app:layout_constraintEnd_toStartOf="@+id/cardDetonador" android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp" app:layout_constraintHorizontal_bias="0.214"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="@string/descricao5_heroi1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" tools:layout_editor_absoluteY="308dp"
+                tools:layout_editor_absoluteX="200dp" android:id="@+id/textView8" app:fontFamily="@font/cabin"
+                android:textStyle="bold" android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"/>
+        <TextView
+                android:text="@string/descricao6_heroi1"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:id="@+id/textView21" app:fontFamily="@font/cabin"
+                android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints" android:layout_marginTop="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintStart_toEndOf="@+id/imageView9" android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp" android:layout_marginBottom="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardDetonador"
+                app:layout_constraintEnd_toStartOf="@+id/heroi1" android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.031"/>
+        <TextView
+                android:text="@string/descricao2_heroi2"
+                android:layout_width="81dp"
+                android:layout_height="35dp"
+                android:id="@+id/textView22"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/textView29"
+                app:layout_constraintStart_toEndOf="@+id/imageView18" android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" app:layout_constraintEnd_toStartOf="@+id/cardMago"
+                android:layout_marginEnd="58dp" android:layout_marginRight="58dp" android:layout_marginBottom="21dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView18" app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="@string/descricao3_heroi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView23"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="104dp" app:layout_constraintBottom_toTopOf="@+id/cardNebulosa"
+                android:layout_marginEnd="120dp" android:layout_marginRight="120dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView18" android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp" android:layout_marginTop="17dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="@string/descricao4_heroi2" android:layout_width="89dp"
+                android:layout_height="40dp"
+                android:id="@+id/textView24"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" tools:ignore="MissingConstraints"
+                android:layout_marginTop="1dp" app:layout_constraintTop_toBottomOf="@+id/textView23"
+                app:layout_constraintStart_toEndOf="@+id/imageView18" android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" android:layout_marginBottom="39dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardMago" app:layout_constraintEnd_toStartOf="@+id/cardMago"
+                android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
+                app:layout_constraintHorizontal_bias="0.079" app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="@string/descricao2_heroi3"
+                android:layout_width="108dp"
+                android:layout_height="0dp"
+                android:id="@+id/textView31"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" tools:ignore="MissingConstraints"
+                app:layout_constraintStart_toEndOf="@+id/imageView21" android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp" app:layout_constraintEnd_toStartOf="@+id/cardNebulosa"
+                android:layout_marginEnd="43dp" android:layout_marginRight="43dp"
+                app:layout_constraintHorizontal_bias="0.069" android:layout_marginTop="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView32"/>
+        <TextView
+                android:text="@string/descricao3_heroi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView32"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textStyle="bold"
+                tools:ignore="MissingConstraints" app:layout_constraintBottom_toTopOf="@+id/textView33"
+                app:layout_constraintStart_toEndOf="@+id/imageView21"
+                android:layout_marginBottom="4dp" app:layout_constraintTop_toBottomOf="@+id/textView31"
+                app:layout_constraintEnd_toStartOf="@+id/cardNebulosa" android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp" app:layout_constraintHorizontal_bias="0.027"/>
+        <TextView
+                android:text="@string/descricao4_heroi3"
+                android:layout_width="108dp"
+                android:layout_height="40dp"
+                android:id="@+id/textView33"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" tools:ignore="MissingConstraints"
+                app:layout_constraintStart_toEndOf="@+id/imageView21"
+                android:layout_marginLeft="9dp" android:layout_marginStart="9dp"
+                app:layout_constraintEnd_toStartOf="@+id/cardNebulosa" android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginBottom="60dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardSniper" app:layout_constraintHorizontal_bias="0.056"
+                android:layout_marginTop="4dp" app:layout_constraintTop_toBottomOf="@+id/textView32"/>
+        <TextView
+                android:text="@string/descricao2_heroi4"
+                android:layout_width="108dp"
+                android:layout_height="70dp"
+                android:id="@+id/textView34"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textSize="12sp"
+                tools:ignore="MissingConstraints" app:layout_constraintTop_toBottomOf="@+id/textView27"
+                app:layout_constraintStart_toEndOf="@+id/imageView22" android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" app:layout_constraintEnd_toStartOf="@+id/cardSniper"
+                android:layout_marginEnd="31dp" android:layout_marginRight="31dp"
+                app:layout_constraintHorizontal_bias="0.092" app:layout_constraintBottom_toTopOf="@+id/textView35"/>
+        <TextView
+                android:text="@string/descricao3_heroi4"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:id="@+id/textView35"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintStart_toEndOf="@+id/imageView22" android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" app:layout_constraintEnd_toStartOf="@+id/cardSniper"
+                android:layout_marginEnd="60dp" android:layout_marginRight="60dp"
+                app:layout_constraintHorizontal_bias="0.094" tools:layout_editor_absoluteY="1134dp"/>
+        <TextView
+                android:text="@string/descricao4_heroi4"
+                android:layout_width="87dp"
+                android:layout_height="51dp" tools:layout_editor_absoluteY="1155dp"
+                tools:layout_editor_absoluteX="209dp" android:id="@+id/textView38"
+                android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textSize="12sp"
+                tools:ignore="MissingConstraints"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

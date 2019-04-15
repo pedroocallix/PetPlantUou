@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">PetPlant</string>
+    <string name="textview">TextView</string>
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="button">Button</string>
+
+    //Inserir Nome da Planta
+    <string name="pergunta_nome">Qual seu Nome?</string>
+    <string name="pergunta_nome_dois">Revele sua identidade secreta.</string>
+    <string name="nome">Nome</string>
+
+    //Perfil da Planta
+    <string name="jogador">Anônimo</string>
+    <string name="trocar">Trocar</string>
+    <string name="personagem">Personagem</string>
+
+
+    //Botões
+    <string name="ok">OK</string>
+    <string name="conectar">Conectar</string>
+
+
+    //Escolher Especie
+    <string name="personagens">Espécies </string>
+    <string name="heroi1">Planta Carnívora</string>
+    <string name="heroi2">Suculenta</string>
+    <string name="heroi3">Mini-Samambaia</string>
+    <string name="heroi4">Espada de São Jorge</string>
+    <string name="heroi5">Jade</string>
+    <string name="descricao_heroi1">Alimentação</string>
+    <string name="descricao2_heroi1">Deixe-a próximo de lugares com passagem de insetos.</string>
+    <string name="descricao3_heroi1">Rega</string>
+    <string name="descricao4_heroi1">Todos os dias.</string>
+    <string name="descricao5_heroi1">Iluminação</string>
+    <string name="descricao6_heroi1">Dia todo/Indiretamente.</string>
+
+    <string name="descricao1_heroi2">Rega</string>
+    <string name="descricao2_heroi2">De 3 em 3 dias.</string>
+    <string name="descricao3_heroi2">Iluminação</string>
+    <string name="descricao4_heroi2">Dia todo/Indiretamente.</string>
+
+    <string name="descricao1_heroi3">Rega</string>
+    <string name="descricao2_heroi3">Um pouco todos os dias.</string>
+    <string name="descricao3_heroi3">Iluminação </string>
+    <string name="descricao4_heroi3">De manhã/Meia sombra.</string>
+
+    <string name="descricao1_heroi4">Rega</string>
+    <string name="descricao2_heroi4">Verão:moderadamente/Inverno:de 20 em 20 dias.</string>
+    <string name="descricao3_heroi4">Iluminação</string>
+    <string name="descricao4_heroi4">Algumas horas/Sol direto ou meia sombra. </string>
+
+
+    <string name="descricao1_heroi5">Rega</string>
+    <string name="descricao2_heroi5">O Valente com a sua incrível força, pode causar dano ate no jogador mais experiente. </string>
+    <string name="descricao3_heroi5">Iluminação</string>
+    <string name="descricao4_heroi5">O Valente com a sua incrível força, pode causar dano ate no jogador mais experiente. </string>
+
+
+    <string name="descricao_card">Cards que irão conter as informaçoes dos personagens</string>
+    <string name="vida_hab">Vida</string>
+    <string name="cura_hab">Cura</string>
+    <string name="dano_hab">Dano</string>
+</resources>
