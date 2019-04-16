@@ -69,14 +69,7 @@ class Especies : AppCompatActivity() {
             imageView.setImageResource(R.drawable.lanca_de_sao_jorge)
         }
     }
-    fun ClickValente(view: View) {
-        val ch = 'e'
-        val bt = ch.toByte()
-        val intent: Intent = Intent(this,Page3::class.java)
-        //intent.putExtra("imagemPersonagem"!; R.drawable.valente)
-        intent.putExtra("txtPersonagem",heroi5.text.toString())
-        startActivity(intent)
-    }
+
 }
 
 

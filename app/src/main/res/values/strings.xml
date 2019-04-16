@@ -11,7 +11,7 @@
 
     //Perfil da Planta
     <string name="jogador">Anônimo</string>
-    <string name="trocar">Trocar</string>
+    <string name="editar">Editar</string>
     <string name="personagem">Personagem</string>
 
 

@@ -26,13 +26,14 @@
                 android:id="@+id/textView6"
                 android:layout_width="147dp"
                 android:layout_height="66dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="32dp"
                 android:text="@string/personagens"
                 android:textColor="@color/colorAccent3"
                 android:textSize="40sp"
                 app:layout_constraintTop_toTopOf="parent" app:fontFamily="@font/anton"
-                android:layout_marginEnd="132dp" app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginRight="132dp"/>
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"/>
 
         <ImageView
                 android:id="@+id/cardDetonador"
@@ -42,8 +43,10 @@
                 android:onClick="ClickDetonador"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/botao_fundo" tools:layout_editor_absoluteY="130dp"
-                tools:ignore="MissingConstraints"/>
+                app:srcCompat="@drawable/botao_fundo"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="45dp" app:layout_constraintBottom_toTopOf="@+id/cardMago"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
                 android:id="@+id/cardNebulosa"
@@ -55,7 +58,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardMago"
-                app:srcCompat="@drawable/botao_fundo" />
+                app:srcCompat="@drawable/botao_fundo"/>
 
         <ImageView
                 android:id="@+id/cardSniper"
@@ -68,7 +71,7 @@
                 app:layout_constraintHorizontal_bias="0.526"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardNebulosa"
-                app:srcCompat="@drawable/botao_fundo" />
+                app:srcCompat="@drawable/botao_fundo"/>
 
         <ImageView
                 android:id="@+id/cardMago"
@@ -81,47 +84,34 @@
                 app:layout_constraintHorizontal_bias="0.528"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardDetonador"
-                app:srcCompat="@drawable/botao_fundo" />
-
-        <ImageView
-                android:id="@+id/cardValente"
-                android:layout_width="350dp"
-                android:layout_height="254dp"
-                android:layout_marginTop="24dp"
-                android:contentDescription="@string/descricao_card"
-                android:onClick="ClickValente"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardSniper"
-                app:srcCompat="@drawable/botao_fundo" />
+                app:srcCompat="@drawable/botao_fundo"/>
 
         <TextView
                 android:id="@+id/heroi1"
-                android:layout_width="213dp"
-                android:layout_height="44dp"
-                android:layout_marginTop="40dp"
+                android:layout_width="162dp"
+                android:layout_height="38dp"
                 android:text="@string/heroi1"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="@+id/cardDetonador"
-                app:layout_constraintHorizontal_bias="0.765"
-                app:layout_constraintStart_toStartOf="@+id/cardDetonador"
-                app:layout_constraintTop_toTopOf="@+id/cardDetonador" app:fontFamily="@font/anton"
-                android:textColor="@color/colorPrimary"/>
+                app:fontFamily="@font/anton"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintBottom_toTopOf="@+id/textView25"/>
 
         <TextView
                 android:id="@+id/heroi2"
                 android:layout_width="121dp"
-                android:layout_height="41dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="60dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="28dp"
                 android:text="@string/heroi2"
                 android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/cardMago"
                 app:layout_constraintEnd_toEndOf="@+id/cardMago"
-                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintHorizontal_bias="0.517"
                 app:layout_constraintStart_toStartOf="@+id/cardMago"
                 app:layout_constraintTop_toTopOf="@+id/cardMago"
-                app:layout_constraintVertical_bias="0.183" android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
                 app:fontFamily="@font/anton"/>
 
         <TextView
@@ -154,61 +144,19 @@
                 app:fontFamily="@font/anton"/>
 
         <TextView
-                android:id="@+id/heroi5"
-                android:layout_width="wrap_content"
-                android:layout_height="29dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="60dp"
-                android:text="@string/heroi5"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="@+id/cardValente"
-                app:layout_constraintEnd_toEndOf="@+id/cardValente"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="@+id/cardValente"
-                app:layout_constraintTop_toTopOf="@+id/cardValente"
-                app:layout_constraintVertical_bias="0.146" android:textColor="@color/colorPrimary"
-                app:fontFamily="@font/anton"/>
-
-        <TextView
-                android:id="@+id/textView25"
-                android:layout_width="92dp"
-                android:layout_height="20dp"
-                android:text="@string/descricao_heroi1"
-                app:fontFamily="@font/cabin" android:textStyle="bold" android:textColor="@color/colorPrimary"
-                app:layout_constraintTop_toBottomOf="@+id/heroi1" app:layout_constraintStart_toEndOf="@+id/imageView9"
-                android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
-                app:layout_constraintBottom_toTopOf="@+id/textView" app:layout_constraintEnd_toStartOf="@+id/heroi1"
-                android:layout_marginEnd="10dp" android:layout_marginRight="10dp"
-                app:layout_constraintHorizontal_bias="0.005"/>
-
-        <TextView
-                android:id="@+id/textView26"
-                android:layout_width="186dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="@string/descricao1_heroi5"
-                app:layout_constraintBottom_toBottomOf="@+id/cardValente"
-                app:layout_constraintEnd_toEndOf="@+id/cardValente"
-                app:layout_constraintHorizontal_bias="0.939"
-                app:layout_constraintStart_toStartOf="@+id/cardValente"
-                app:layout_constraintTop_toBottomOf="@+id/heroi5"
-                app:layout_constraintVertical_bias="0.0" android:textColor="@color/colorPrimary"
-                app:fontFamily="@font/cabin"/>
-
-        <TextView
                 android:id="@+id/textView27"
                 android:layout_width="34dp"
                 android:layout_height="22dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/descricao1_heroi4"
                 app:layout_constraintBottom_toBottomOf="@+id/cardSniper"
-                app:layout_constraintEnd_toEndOf="@+id/cardSniper"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.559"
                 app:layout_constraintStart_toStartOf="@+id/cardSniper"
                 app:layout_constraintTop_toBottomOf="@+id/heroi4"
                 app:layout_constraintVertical_bias="0.0" android:textColor="@color/colorPrimary"
-                app:fontFamily="@font/cabin" android:textStyle="bold"/>
+                app:fontFamily="@font/cabin" android:textStyle="bold" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"/>
 
         <TextView
                 android:id="@+id/textView28"
@@ -221,20 +169,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/heroi3"
                 app:layout_constraintVertical_bias="0.0"
                 android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textStyle="bold"
-                android:layout_marginEnd="140dp" android:layout_marginRight="140dp"/>
+                android:layout_marginEnd="140dp" android:layout_marginRight="140dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView21" android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp" app:layout_constraintHorizontal_bias="0.782"/>
 
         <TextView
                 android:id="@+id/textView29"
                 android:layout_width="39dp"
                 android:layout_height="20dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="152dp"
                 android:text="@string/descricao1_heroi2"
                 app:layout_constraintBottom_toBottomOf="@+id/cardMago"
                 app:layout_constraintEnd_toEndOf="@+id/cardMago"
-                app:layout_constraintHorizontal_bias="0.588"
+                app:layout_constraintHorizontal_bias="0.601"
                 app:layout_constraintStart_toStartOf="@+id/cardMago"
-                app:layout_constraintTop_toBottomOf="@+id/heroi2"
-                app:layout_constraintVertical_bias="0.039" android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
                 app:fontFamily="@font/cabin" android:textStyle="bold"/>
 
         <ImageView
@@ -278,74 +227,69 @@
                 app:srcCompat="@drawable/lanca_de_sao_jorge" android:layout_marginLeft="56dp"/>
 
         <ImageView
-                android:id="@+id/imageView23"
-                android:layout_width="127dp"
-                android:layout_height="148dp"
-                android:layout_marginStart="8dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="@+id/cardValente"
-                app:layout_constraintStart_toStartOf="@+id/cardValente"
-                app:layout_constraintTop_toTopOf="@+id/cardValente"
-                app:srcCompat="@drawable/suculenta" />
-
-        <ImageView
                 android:layout_width="103dp"
                 android:layout_height="139dp"
-                android:id="@+id/imageView9" android:layout_marginTop="4dp"
-                app:layout_constraintTop_toBottomOf="@+id/heroi1" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginLeft="96dp" android:layout_marginStart="96dp" android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardDetonador"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/carnivora"/>
+                android:id="@+id/imageView9"
+                app:srcCompat="@drawable/carnivora"
+                app:layout_constraintStart_toStartOf="@+id/cardDetonador"
+                app:layout_constraintEnd_toEndOf="@+id/cardDetonador" app:layout_constraintHorizontal_bias="0.26"
+                android:layout_marginBottom="32dp" app:layout_constraintBottom_toBottomOf="@+id/cardDetonador"/>
         <TextView
                 android:text="@string/descricao2_heroi1"
                 android:layout_width="95dp"
-                android:layout_height="53dp"
+                android:layout_height="39dp"
                 android:id="@+id/textView" android:textSize="10sp"
                 app:fontFamily="@font/cabin" android:textColor="@color/colorPrimary"
-                app:layout_constraintTop_toBottomOf="@+id/textView25"
-                app:layout_constraintStart_toEndOf="@+id/imageView9" android:layout_marginLeft="2dp"
-                android:layout_marginStart="2dp" app:layout_constraintBottom_toTopOf="@+id/textView2"
-                app:layout_constraintEnd_toStartOf="@+id/cardDetonador" android:layout_marginEnd="82dp"
-                android:layout_marginRight="82dp" app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintVertical_bias="0.0"/>
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintBottom_toTopOf="@+id/textView8"/>
         <TextView
                 android:text="@string/descricao3_heroi1"
                 android:layout_width="wrap_content"
-                android:layout_height="24dp" tools:layout_editor_absoluteY="267dp"
-                tools:layout_editor_absoluteX="201dp" android:id="@+id/textView2" app:fontFamily="@font/cabin"
-                android:textStyle="bold" android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"/>
+                android:layout_height="20dp"
+                android:id="@+id/textView2" app:fontFamily="@font/cabin"
+                android:textStyle="bold" android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" android:layout_marginTop="8dp"/>
         <TextView
                 android:text="@string/descricao4_heroi1"
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_width="73dp"
+                android:layout_height="18dp"
                 android:id="@+id/textView4" app:fontFamily="@font/cabin"
                 android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintStart_toEndOf="@+id/textView8"
-                android:layout_marginLeft="1dp" android:layout_marginStart="1dp" android:layout_marginBottom="5dp"
-                app:layout_constraintBottom_toTopOf="@+id/textView21"
-                app:layout_constraintEnd_toStartOf="@+id/cardDetonador" android:layout_marginEnd="21dp"
-                android:layout_marginRight="21dp" app:layout_constraintHorizontal_bias="0.214"
-                app:layout_constraintVertical_bias="0.0"/>
+                android:textSize="12sp" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="0.708"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView21"/>
         <TextView
                 android:text="@string/descricao5_heroi1"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp" tools:layout_editor_absoluteY="308dp"
-                tools:layout_editor_absoluteX="200dp" android:id="@+id/textView8" app:fontFamily="@font/cabin"
-                android:textStyle="bold" android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"/>
+                android:layout_height="21dp"
+                android:id="@+id/textView8" app:fontFamily="@font/cabin"
+                android:textStyle="bold" android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"
+                android:layout_marginBottom="100dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardDetonador"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.555"/>
         <TextView
                 android:text="@string/descricao6_heroi1"
                 android:layout_width="110dp"
-                android:layout_height="36dp"
+                android:layout_height="37dp"
                 android:id="@+id/textView21" app:fontFamily="@font/cabin"
-                android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints" android:layout_marginTop="1dp"
+                android:textColor="@color/colorPrimary" tools:ignore="MissingConstraints"
                 app:layout_constraintTop_toBottomOf="@+id/textView8"
-                app:layout_constraintStart_toEndOf="@+id/imageView9" android:layout_marginLeft="2dp"
-                android:layout_marginStart="2dp" android:layout_marginBottom="19dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardDetonador"
-                app:layout_constraintEnd_toStartOf="@+id/heroi1" android:layout_marginEnd="12dp"
-                android:layout_marginRight="12dp" app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintVertical_bias="0.031"/>
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.67"
+        />
         <TextView
                 android:text="@string/descricao2_heroi2"
                 android:layout_width="81dp"
@@ -356,7 +300,7 @@
                 app:layout_constraintStart_toEndOf="@+id/imageView18" android:layout_marginLeft="13dp"
                 android:layout_marginStart="13dp" app:layout_constraintEnd_toStartOf="@+id/cardMago"
                 android:layout_marginEnd="58dp" android:layout_marginRight="58dp" android:layout_marginBottom="21dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView18" app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintBottom_toTopOf="@+id/imageView18" app:layout_constraintHorizontal_bias="0.063"
                 app:layout_constraintVertical_bias="0.0"/>
         <TextView
                 android:text="@string/descricao3_heroi2"
@@ -370,7 +314,7 @@
                 android:layout_marginEnd="120dp" android:layout_marginRight="120dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView18" android:layout_marginLeft="9dp"
                 android:layout_marginStart="9dp" android:layout_marginTop="17dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView22" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" app:layout_constraintHorizontal_bias="0.789"
                 app:layout_constraintVertical_bias="0.0"/>
         <TextView
                 android:text="@string/descricao4_heroi2" android:layout_width="89dp"
@@ -382,17 +326,17 @@
                 android:layout_marginStart="13dp" android:layout_marginBottom="39dp"
                 app:layout_constraintBottom_toTopOf="@+id/cardMago" app:layout_constraintEnd_toStartOf="@+id/cardMago"
                 android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
-                app:layout_constraintHorizontal_bias="0.079" app:layout_constraintVertical_bias="0.0"/>
+                app:layout_constraintHorizontal_bias="0.067" app:layout_constraintVertical_bias="0.0"/>
         <TextView
                 android:text="@string/descricao2_heroi3"
                 android:layout_width="108dp"
-                android:layout_height="0dp"
+                android:layout_height="37dp"
                 android:id="@+id/textView31"
                 android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" tools:ignore="MissingConstraints"
                 app:layout_constraintStart_toEndOf="@+id/imageView21" android:layout_marginLeft="12dp"
                 android:layout_marginStart="12dp" app:layout_constraintEnd_toStartOf="@+id/cardNebulosa"
                 android:layout_marginEnd="43dp" android:layout_marginRight="43dp"
-                app:layout_constraintHorizontal_bias="0.069" android:layout_marginTop="1dp"
+                app:layout_constraintHorizontal_bias="0.06" android:layout_marginTop="1dp"
                 app:layout_constraintTop_toBottomOf="@+id/textView28" android:layout_marginBottom="1dp"
                 app:layout_constraintBottom_toTopOf="@+id/textView32"/>
         <TextView
@@ -426,10 +370,10 @@
                 android:id="@+id/textView34"
                 android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textSize="12sp"
                 tools:ignore="MissingConstraints" app:layout_constraintTop_toBottomOf="@+id/textView27"
-                app:layout_constraintStart_toEndOf="@+id/imageView22" android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp" app:layout_constraintEnd_toStartOf="@+id/cardSniper"
-                android:layout_marginEnd="31dp" android:layout_marginRight="31dp"
-                app:layout_constraintHorizontal_bias="0.092" app:layout_constraintBottom_toTopOf="@+id/textView35"/>
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.735"/>
         <TextView
                 android:text="@string/descricao3_heroi4"
                 android:layout_width="wrap_content"
@@ -440,14 +384,30 @@
                 app:layout_constraintStart_toEndOf="@+id/imageView22" android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp" app:layout_constraintEnd_toStartOf="@+id/cardSniper"
                 android:layout_marginEnd="60dp" android:layout_marginRight="60dp"
-                app:layout_constraintHorizontal_bias="0.094" tools:layout_editor_absoluteY="1134dp"/>
+                app:layout_constraintHorizontal_bias="0.064"
+                app:layout_constraintBottom_toBottomOf="@+id/textView34"/>
         <TextView
                 android:text="@string/descricao4_heroi4"
                 android:layout_width="87dp"
-                android:layout_height="51dp" tools:layout_editor_absoluteY="1155dp"
-                tools:layout_editor_absoluteX="209dp" android:id="@+id/textView38"
+                android:layout_height="51dp"
+                android:id="@+id/textView38"
                 android:textColor="@color/colorPrimary" app:fontFamily="@font/cabin" android:textSize="12sp"
-                tools:ignore="MissingConstraints"/>
+                tools:ignore="MissingConstraints" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" app:layout_constraintHorizontal_bias="0.694"/>
+        <TextView
+                android:id="@+id/textView25"
+                android:layout_width="92dp"
+                android:layout_height="20dp"
+                android:text="@string/descricao_heroi1"
+                app:fontFamily="@font/cabin" android:textStyle="bold" android:textColor="@color/colorPrimary"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="0.63"
+                app:layout_constraintBottom_toTopOf="@+id/textView"/>
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
